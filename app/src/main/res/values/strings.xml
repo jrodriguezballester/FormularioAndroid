@@ -12,4 +12,7 @@
     <string name="rb_hombre">Masculino</string>
     <string name="rb_mujer">Femenino</string>
     <string name="title_activity_presentacion">Presentacion</string>
+    <string name="genero">Genero</string>
+    <string name="b_siguiente_datos">Siguiente</string>
+    <string name="txt_edad">Edad</string>
 </resources>

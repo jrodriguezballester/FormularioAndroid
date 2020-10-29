@@ -7,17 +7,32 @@
 
     tools:context=".datos">
 
+    <TextView
+        android:id="@+id/txtGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/genero"
+        android:textColor="#000"
+        android:textSize="50sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <RadioGroup
         android:id="@+id/opciones_sexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/txtCargar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/txtGenero">
 
         <RadioButton
             android:id="@+id/radio_masculino"
@@ -41,31 +56,33 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="Edad"
+        android:text="@string/txt_edad"
         android:textColor="#000"
         android:textSize="50sp"
-
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="368dp" />
+        app:layout_constraintBottom_toTopOf="@+id/seekbar"
+        tools:layout_editor_absoluteX="20dp" />
 
     <SeekBar
         android:id="@+id/seekbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="20dp"
+
         android:background="#ccc"
         app:layout_constraintTop_toBottomOf="@+id/txtCargar"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="20dp" />
 
     <Button
         android:id="@+id/button_siguiente_datos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Siguiente"
+        android:text="@string/b_siguiente_datos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+        app:layout_constraintTop_toBottomOf="@+id/seekbar"
+        app:layout_constraintVertical_bias="0.619" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
