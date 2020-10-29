@@ -20,17 +20,13 @@ public class datos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos);
-       // Toolbar toolbar = findViewById(R.id.toolbar);
-     //   setSupportActionBar(toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-     //   FloatingActionButton fab = findViewById(R.id.fab);
-     //   fab.setOnClickListener(new View.OnClickListener() {
-      //      @Override
-      //      public void onClick(View view) {
-      //          Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-      //                  .setAction("Action", null).show();
-      //      }
-     //   });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_myicono2);
+
+
         final TextView mostrarPorcentaje = (TextView) findViewById(R.id.txtCargar);
         // SeekBar
         SeekBar seekBar = (SeekBar) findViewById(R.id.seekbar);
@@ -53,6 +49,7 @@ public class datos extends AppCompatActivity {
                     public void onStopTrackingTouch(SeekBar seekBar) {
                     }
                 });
+
 
         Button btn = (Button) findViewById(R.id.button_siguiente_datos);
         btn.setOnClickListener(new View.OnClickListener() {

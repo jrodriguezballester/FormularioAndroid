@@ -1,6 +1,7 @@
 package com.example.miformulariojoserodriguez;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,11 +14,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*
-       mostrar icono
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setIcon(R.mipmap.ic_myicono2);
-       */
+
+
+       // mostrar icono
+      //  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
+
         Button btn = (Button) findViewById(R.id.buttonSiguiente);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -31,6 +31,9 @@ public class Presentacion extends AppCompatActivity {
 
             }
         });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_myicono2);
+
         Button btn = (Button) findViewById(R.id.btn_toast_pre);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
